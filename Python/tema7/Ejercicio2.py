@@ -23,7 +23,7 @@ def calcularTiempoRestanteTrabajo():
     print('Te quedan', horas, minutos, segundos, 'de trabajo')
 
 
-if horaActual > 19:
+if horaActual >= 19:
     print('Es la hora de ir a casa')
 else:
     calcularTiempoRestanteTrabajo()
