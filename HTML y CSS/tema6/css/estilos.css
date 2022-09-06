@@ -1,0 +1,20 @@
+#buttonId{
+    font-size:large;
+    width:300px;
+    color:seagreen;
+    background-color:white;
+    border-radius: 5px;
+    border: 1px solid rgb(52, 52, 52, 0.3);
+}
+
+#buttonId::before{
+    content:'Pasa por encima';
+}
+
+#buttonId:hover{
+    color: white;
+    background-color:seagreen;
+}
+#buttonId:hover::before{
+    content:'¡Hecho!';
+}
