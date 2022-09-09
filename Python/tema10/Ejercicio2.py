@@ -1,4 +1,3 @@
-# En este segundo ejercicio, tendréis que crear una interfaz sencilla la cual debe de contener una lista de elementos seleccionables, también debe de tener un label con el texto que queráis.import tkinter
 import tkinter
 from tkinter import ttk
 
@@ -43,8 +42,8 @@ titulo = tkinter.Label(window, text='Marca Automovil', fg='black')
 titulo.grid(column=3, row=1, sticky=tkinter.N, padx=5, pady=5)
 etiquetaValor = tkinter.Label(window, text='', fg='black')
 etiquetaValor.grid(column=3, row=6, sticky=tkinter.N, padx=5, pady=5)
+
 # Checklist
 crearCheckList()
-
 
 window.mainloop()
