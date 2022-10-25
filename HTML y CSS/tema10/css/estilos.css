@@ -1,0 +1,38 @@
+main {
+    display:flex;
+    padding: 5px;
+    gap:5px;
+    font-family: Helvetica,Arial;
+}
+.izquierda, .derecha{
+    display: flex;
+    border-radius: 5px;
+    padding: 20px 15px;
+    color: #fff;
+}
+.izquierda{
+    background-color: #707070;
+    flex-direction: column;
+    justify-content:space-around;
+    gap: 15px
+}
+.derecha{
+    background-color: #434343;
+    flex-grow:1;
+    justify-content:center;
+    align-items:center;
+}
+
+@media screen and (max-width: 640px){
+    main{
+        flex-direction: column;
+    }
+    .derecha{
+        order:1;
+    }
+    .izquierda{
+        display: flex;
+        flex-direction: row;
+        order:2
+    }
+}
