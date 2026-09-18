@@ -1,0 +1,32 @@
+> git config --> Muestra la configuración de git.
+> git config --system --> Para modificar la configuración de git a nivel de sistema.
+> git config --global --> Para modificar la configuración de git a nivel de usuario de sistema.
+> git config --local --> Para modificar la configuración de git a nivel de repositorio.
+> git config --global user.name --> Para modificar nombre de usuario a nivel de usuario de sistema.
+> git config --global user.email --> Para modificar email de usuario a nivel de usuario de sistema.
+> git init . --> Inicia repositorio en la carpeta en la que se ejecuta el comando (crea carpeta .git).
+> git init --bare nombreRepositorio --> Inicia repositorio central "remote" desde el que pueden trabajar varias personas (como si fuera un repositorio en github, gitlab...). 
+> git log --> Muestra toda la información de los commits del repositorio.
+> git log --graph --> Muestra toda la información de los commits del repositorio y las ramas de forma visual.
+> git log --oneline --> Muestra los ids abreviados de los commits del repositorio.
+> git log --oneline --graph --> Muestra los ids abreviados de los commits del repositorio y las ramas de forma visual.
+> git add . --> Añade todos los ficheros al stage area del repositorio.
+> git add nombreFichero --> Añade el fichero indicado al stage area del repositorio.
+> git commmit --> Genera punto de confirmación del repositorio y abre editor para escribir el mensaje de confirmación.
+> git commit -a --> Agrega al punto de confirmación del repositorio todos los ficheros del stage area y abre editor para escribir el mensaje de confirmación.
+> git commit -m "mensaje de confirmacion" --> Genera punto de confirmación del repositorio y no es necesario abrir editor para escribir el mensaje de confirmación.
+> git commit -am "mensaje de confirmacion" --> Agrega al punto de confirmación del repositorio todos los ficheros del stage area y no es necesario abrir editor para escribir el mensaje de confirmación.
+> git push --> Envia los cambios de los ficheros del stage area al repositorio remoto/central.
+> git clone rutaRepositorio --> Genera un repositorio a partir de una copia de un repositorio remoto/central.
+> git pull --> Obtiene todos los cambios del repositorio remoto/central y actualiza el repositorio local.
+> git tag nombreEtiqueta --> Genera etiqueta (para indicar versiones menores)
+> git tag -a nombreEtiqueta --> Genera etiqueta con datos de usuario, fecha, etc. (para indicar versiones mayores)
+> git tag nombreEtiqueta idCommit --> Genera etiqueta (para versiones menores) a una confirmación concreta.
+> git push origin nombreEtiqueta --> Envía la etiqueta al repositorio remoto/central.
+> git show --> Muestra información de la última confirmación realizada.
+> git checkout nombreRama/nombreEtiqueta --> Cambia a una rama existente/estado en el que se genera etiqueta.
+> git checkout -b nombreRama --> Cambia a una rama y sino existe la crea.
+> git revert idCommit --> Retrocede el estado actual (HEAD) a un punto anterior manteniendo el historial.
+> git rm nombreFichero --> Elimina fichero del repositorio.
+> git reset --soft HEAD-numPasosAtras --> 
+

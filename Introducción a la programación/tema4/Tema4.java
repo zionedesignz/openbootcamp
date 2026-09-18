@@ -1,9 +1,13 @@
 public class Tema4{
 
+    public static void mostrarMensaje(String estacion) {
+        System.out.println("La estación indicada es: " + estacion);
+    }
+
     public static void main(String args[]) {
         /* IF */
         int numeroIf = 5;
-        
+
         if(numeroIf > 0){
             System.out.println("El número " + numeroIf + " es positivo");
         } else if (numeroIf < 0) {
@@ -37,17 +41,10 @@ public class Tema4{
         String estacion = "VERANO";
 
         switch(estacion) {
-            case "INVIERNO":
-                System.out.println("La estación indicada es: " + estacion);
-                break;
-            case "PRIMAVERA":
-                System.out.println("La estación indicada es: " + estacion);
-                break;
+            case ("INVIERNO" || "PRIMAVERA"):
             case "VERANO":
-                System.out.println("La estación indicada es: " + estacion);
-                break;
             case "OTOÑO":
-                System.out.println("La estación indicada es: " + estacion);
+                mostrarMensaje(estacion);
                 break;
             default:
                 System.out.println("El valor no es una estación del año");
